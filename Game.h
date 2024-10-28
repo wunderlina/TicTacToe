@@ -11,8 +11,11 @@
 class Game {
 public:
   Game();
+  void play();
+
 private:
   Grid grid;
+  void takeTurn();
 };
 
 

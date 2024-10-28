@@ -4,8 +4,7 @@
 
 #ifndef GAME_H
 #define GAME_H
-#include "Game.cpp"
-#include "Grid.cpp"
+#include "Grid.h"
 
 
 class Game {
@@ -15,9 +14,7 @@ public:
 
 private:
   Grid grid;
-  void takeTurn();
+  void takeTurn(Piece piece);
 };
-
-
 
 #endif //GAME_H

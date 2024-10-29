@@ -31,6 +31,7 @@ void Game::takeTurn(Piece piece){
     int x = -1;
     int y = -1;
     while(!grid.resolveTurn(x, y, piece)) {
+        grid.printGrid();
         std::cout << "Where would you like to make your move?\nEnter as \"x y\"";
         std::cin >> x;
         std::cin >> y;

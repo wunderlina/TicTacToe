@@ -9,13 +9,15 @@
 
 class Grid {
 private:
-    Piece piece[];
-    Piece getSpot(int x, int y);
+    Piece* pieces[9];
+    Piece* getSpot(int x, int y);
 public:
-    Piece checkWin();
-    bool checkFull();
-    bool resolveTurn(int x, int y, Piece piece);
-    void printGrid();
+    Grid();
+    Piece* checkWin() const;
+    bool checkFull() const;
+
+    bool resolveTurn(int x, int y, Piece* piece);
+    void printGrid() const;
 };
 
 

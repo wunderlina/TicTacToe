@@ -14,7 +14,7 @@ public:
 
 private:
   Grid grid;
-  void takeTurn(Piece piece);
+  void takeTurn(Piece* piece);
 };
 
 #endif //GAME_H
